@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat - Talq app</title>
+    <title>Chat - Gotalk app</title>
     
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,54 +31,58 @@
             <div id="roomContainer">
                 <div id="appName">
                     <i class="fas fa-paper-plane"></i>
-                    <h1>Talq</h1>
+                    <h1>Welcome, <span id="username"></span> 👋</h1>
                 </div>
                 <div id="roomHolder">
 
                     <div id="roomList">
-                        <div id="roomImg"></div>
+                        <div id="roomImg">🌮</div>
                         <div id="roomName">
-                            <h3>Room Name 1</h3>
+                            <h3>Where to eat?</h3>
                             <p><span id="chatAmount">36</span> chats in the room</p>
                         </div>
                     </div>
                     <div id="roomList">
-                        <div id="roomImg"></div>
+                        <div id="roomImg">🎉</div>
                         <div id="roomName">
-                            <h3>Room Name 1</h3>
+                            <h3>Next party</h3>
                             <p><span id="chatAmount">36</span> chats in the room</p>
                         </div>
                     </div>
                     <div id="roomList">
-                        <div id="roomImg"></div>
+                        <div id="roomImg">✈️</div>
                         <div id="roomName">
-                            <h3>Room Name 1</h3>
+                            <h3>Paris 2022</h3>
                             <p><span id="chatAmount">36</span> chats in the room</p>
                         </div>
                     </div>
 
                 </div>
                 <div id="terminate">
-                    <button>Terminate session</button>
+                    <button onclick="terminateSession()">Terminate session</button>
                 </div>
             </div>
         </div>
         <div id="right">
             <div id="sendArea">
                 <div id="sendBubble">
-                    <input type="text" name="" id="idMsg">
-                    <button>send</button>
+                    <input type="text" name="" id="yourMessage">
+                    <button onclick="sendMessage()">send</button>
                 </div>
             </div>
+            <div id="messageContainer"></div>
         </div>
         
     </div>
 
 
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
 
+    <!-- FIREBASE DATABASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
 
     <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+    <script src="script-chat.js"></script>
 
 </body>
 </html>
