@@ -40,6 +40,10 @@ console.log(dateNow);
 
 console.log(yourName);
 
+// ? focus cursor when load
+yourMessage.focus()
+yourMessage.select()
+
 
 
 // ? set event listener
