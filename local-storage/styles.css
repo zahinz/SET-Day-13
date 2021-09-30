@@ -1,0 +1,91 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input { 
+    border: none;
+    background-color: rgb(241, 241, 241);
+    color: rgb(78, 78, 78);
+    padding: 10px;
+    font-size: 1rem;
+    margin: 5px;
+    height : 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#subtotal, #subtotal1, #subtotal2, #subtotal3, #grandTotal, .subtotal {
+    border: none;
+    background-color: rgb(241, 241, 241);
+    color: rgba(78, 78, 78, 0.603);
+    padding: 10px;
+    width: 100px;
+    font-size: 1rem;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 50px;
+}
+
+button {
+    border: none;
+    background-color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    font-size: 1rem;
+    margin: 5px;
+    height : 50px;
+}
+
+#container {
+    height: 600px;
+    width: 900px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#grandTotal {
+    width: 200px;
+}
+
+

@@ -24,8 +24,11 @@
 
 ## What I learned today 💡
 
-### Title
-*  
+### local storage
+*  `localStorage.setItem`
+* `localStorage.getItem`
+* inspect element storage to show where the data is been saved
+* `sessionStorage`
 
 ---
 
@@ -37,4 +40,4 @@
 
 
 ## Homeworks 📝
-* 
+* Dont make me think - book suggestion by Jam

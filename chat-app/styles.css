@@ -1,0 +1,229 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+:root {
+    --pri-color: #0088CC;
+    --sec-color: rgb(206, 206, 206);
+    --ter-color: rgb(55, 55, 87);
+    --pri-font-color: rgb(43, 43, 43);
+}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: o;
+    border: none;
+    text-align: center;
+    outline: none;
+    color: var(--pri-font-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border-radius: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#container {
+    background-color: white;
+    width: 900px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background-color: var(--pri-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+}
+
+#welcome i {
+    font-size: 5rem;
+    color: white;
+}
+
+#welcome h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+#welcome input {
+    padding: 10px 20px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#welcome p {
+    color: white;
+    font-size: 0.7rem;
+    text-decoration: underline;
+}
+
+
+
+/* SECOND PAGE */
+
+#left {
+    width: 35%;
+    height: 100%;
+    background-color: var(--pri-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#roomContainer {
+    width: 85%;
+    height: 91%;
+    position: relative;
+}
+
+#appName {
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#appName i{
+    font-size: 1.5rem;
+    color: white
+}
+
+#appName h1 {
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+#roomHolder {
+    height: 70%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#roomList {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#roomImg {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 15px;
+}
+
+#roomName {
+    margin-left: 15px;
+}
+
+#roomName h3{
+    font-size: 0.9rem;
+    color: var(--pri-font-color);
+}
+
+#roomName p {
+    font-size: 0.68rem;
+    color: white;
+    margin-top: 2px;
+}
+
+#terminate {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+#terminate button {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--ter-color);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Right container */
+
+#right {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#sendArea {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+
+#sendBubble {
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sendBubble input {
+    padding: 10px 20px;
+    width: 80%;
+    text-align: left;
+}
