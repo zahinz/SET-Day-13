@@ -33,13 +33,21 @@ window.addEventListener("keypress", keyPressed)
 
 function keyPressed(evt) {
     if (evt.code == "Enter") {
-        console.log(username.value);
-        // ? saved to session storage
-        sessionStorage.setItem("savedUsername", username.value)
-        yourName = sessionStorage.getItem("savedUsername")
-        username.value = ""
-        // ? execute submitUsername()
-        submitUsername()
+        if (username.value !== "") {
+            console.log(username.value);
+            // ? saved to session storage
+            sessionStorage.setItem("savedUsername", username.value)
+            yourName = sessionStorage.getItem("savedUsername")
+            // ? execute submitUsername()
+            submitUsername()
+            // ? clear the username input
+            username.value = ""
+        }
+        else {
+            console.log(username.value);
+            alert("Oppsie, anon is not allowed 🙅🏻‍♀️")
+        }
+
         
     }
 }
